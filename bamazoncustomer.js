@@ -26,7 +26,7 @@ connection.connect(function (err) {
     function startSession() {
         inquirer.prompt([
             {
-                message: 'Type the id number of the product you would like to purchase?',
+                message: 'Type the id number of the product you would like to purchase',
                 name: 'item'
             },
             {
@@ -41,7 +41,7 @@ connection.connect(function (err) {
                     console.log("Insufficient quantity!")
                     startSession();
                 } else {
-                    var newQuan = (quantity - parseFloat(answer.units))
+                    var newQuan = (quantity - parseFloat(answer.units));
                     connection.query("UPDATE products SET quantity=? WHERE id=?", [newQuan, answer.item], function (err, res) {
                         if (err) throw err;
                         connection.query("SELECT price FROM products WHERE id=?", [answer.item], function (err, res) {

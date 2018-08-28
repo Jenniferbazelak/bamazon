@@ -7,7 +7,7 @@ You will need to install the mySQL and inquirer npm packages.
 
 ## Customer Demo:
 
-<img src="bamazon.svg">
+<img src="https://cdn.rawgit.com/Jenniferbazelak/bamazon/6d86ea87/bamazon.svg">
 
 ## How To
 Go to the command line and enter the following to play as the customer:
@@ -17,7 +17,7 @@ node bamazoncustomer.js
 
 ## Manager Demo:
 
-<img src="bamazonManager.svg">
+<img src="https://cdn.rawgit.com/Jenniferbazelak/bamazon/6d86ea87/bamazonManager.svg">
 
 ## How To
 Enter the following to play as the manager:

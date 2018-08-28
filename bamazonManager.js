@@ -50,7 +50,6 @@ function startSession() {
             connection.query("SELECT * FROM products", function (err, res){
                 if (err) throw err;
                 console.table(res);
-            });
             inquirer.prompt([
                 {
                     message: 'Type the id number of the product you would like to add more of at this time',
@@ -72,6 +71,7 @@ function startSession() {
                     });
                 });
             });
+        });
         }
         if (answer.action === "Add New Product") {
             inquirer.prompt([

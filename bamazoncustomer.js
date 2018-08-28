@@ -48,7 +48,7 @@ connection.connect(function (err) {
                             if (err) {
                                 console.log(err);}
                             else{
-                                console.log("You purchase order has been submitted! Your total is " + "$" + (res[0].price * answer.units));
+                                console.log("Your purchase order has been submitted! Your total is " + "$" + (res[0].price * answer.units));
                                 startSession();
                             }
                         }); //query 3
